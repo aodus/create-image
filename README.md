@@ -14,4 +14,7 @@
 ```
 ./audiodisk.bash FILENAME
 ```
-
+abcdeのCD情報取得先をcddbにしておかないとCD情報に基づいたファイル名になってしまうので、事前に~/abcde.confで設定しておくこと
+```
+echo "CDDBMETHOD=cddb" >~/abcde.conf
+```
