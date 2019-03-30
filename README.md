@@ -14,7 +14,9 @@
 ```
 ./audiodisk.bash FILENAME
 ```
-abcdeのCD情報取得先をcddbにしておかないとCD情報に基づいたファイル名になってしまうので、事前に~/abcde.confで設定しておくこと
+
+abcdeのCD情報取得先をcddbにしておかないとCD情報に基づいたファイル名になってしまうので、事前に~/abcde.confで設定しておくこと  
+abcde2.9からコマンドラインで設定できるようになるので、パッケージのバージョン上がったら対応
 ```
 echo "CDDBMETHOD=cddb" >~/.abcde.conf
 ```
