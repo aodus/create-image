@@ -1,9 +1,8 @@
 #!/bin/bash -x
 
-OFNAME=$(volname /dev/sr0 | tr -d " \n")
-
+OFNAME=$1
 if [[ -z ${OFNAME} ]]; then
-        OFNAME=$1
+        OFNAME=$(volname /dev/sr0 | tr -d " \n")
         if [[ -z ${OFNAME} ]]; then
                 echo "volname not found"
                 exit 1
