@@ -1,7 +1,16 @@
 # create-image
-
 光学メディアから、isoファイルまたはシングルwav+cueを作成するスクリプト
 
+## require
+下記コマンド群が使用可能であること, ddrescue,abcdeは手元で動作したバージョンを記載
+- volname (ファイル名を引数指定するなら不要)
+- ddrescue (ubuntuの場合`sudo apt install gddrescue`でインストールされるもの)
+  - 1.22
+- abcde
+  - 2.8.1
+- mkcue
+
+# usage
 1. データディスク  
 ファイル名は引数指定したものを最優先  
 引数指定せず,かつvolnameコマンドでボリューム名を取得できる場合,volnameの結果を使用.  
